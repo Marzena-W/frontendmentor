@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 html {
     font-size: 62.5%;
 }
@@ -6,6 +10,7 @@ body {
     background-color: #F3EAE3;
     overflow: hidden;
 }
+
 .main {
     width: 100vw;
     height: 100vh;
@@ -13,21 +18,102 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .wrapper {
     max-width: 600px;
     max-height: 450px;
     background-color: #fff;
     border-radius: 10px;
     display: flex;
-    margin: auto;
 }
 
 img {
     width: 100%;
+    height: 100%;
     max-width: 300px;
     border-radius: 10px 0 0 10px;
+    object-fit: cover;
+}
+
+.text-sec {
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-text {
-    max-width: 300px;
+    padding: 0 32px;
+}
+
+h4 {
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .4em;
+    color: #6C7289;
+    font-weight: 500;
+}
+
+h1 {
+    font-family: Fraunces, serif;
+    font-size: 32px;
+    color: #1C232B;
+    font-weight: 700;
+}
+
+p {
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    color: #6C7289;
+    font-weight: 500;
+    line-height: 1.6em;
+}
+
+.prices {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 0;
+}
+
+.price-now {
+    font-family: Fraunces, serif;
+    font-size: 32px;
+    color: #3C8067;
+    font-weight: 700;
+}
+
+.price-before {
+    font-family: Montserrat, sans-serif;
+    font-size: 13px;
+    color: #6C7289;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    background-color: #3C8067;
+    width: 236px;
+    height: 47px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 35px;
+}
+button p{
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+svg {
+    color: black;
+}
+
+button:hover {
+    background-color: #285343;
 }
