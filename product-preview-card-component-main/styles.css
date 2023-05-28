@@ -1,0 +1,33 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #F3EAE3;
+    overflow: hidden;
+}
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper {
+    max-width: 600px;
+    max-height: 450px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px 0 0 10px;
+}
+
+.main-text {
+    max-width: 300px;
+}
