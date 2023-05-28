@@ -23,44 +23,45 @@
 </head>
 
 <body>
+  <main>
+    <article class="product">
 
-  <div class="main">
+      <picture class="product-image">
+        <source srcset="images/image-product-desktop.jpg" media="(min-width: 600px)">    
+      <img src="./images/image-product-mobile.jpg" alt="photo of a Chanel perfume">
+      </picture>
 
-    <div class="wrapper">
+      <div class="product-content">
 
-      <div>
-        <img src="./images/image-product-desktop.jpg" alt="photo of a Chanel perfume">
-      </div>
+        <p class="product-category">Perfume</h4>
+        <h1 class="product-header"> Gabrielle Essence Eau De Parfum</h1>
+        <p class="main-para">A floral, solar and voluptuous interpretation composed by Olivier Polge,
+          Perfumer-Creator for the House of CHANEL.
+        </p>
 
-      <div class="text-sec">
-        <div class="main-text">
-          <h4>Perfume</h4>
-          <h1> Gabrielle Essence Eau De Parfum</h1>
-          <p class="main-para">A floral, solar and voluptuous interpretation composed by Olivier Polge,
-            Perfumer-Creator for the House of CHANEL.
+        <div class="prices">
+          <p class="price-now">
+            <span class="sr-only">Current price: </span>
+            $149.99
           </p>
-
-          <div class="prices">
-            <p class="price-now"> $149.99</p>
-            <p class="price-before"> $169.99</p>
-          </div>
-
-          <button>
-            <svg width="21" height="19" >
-              <path
-                d="M0.875 0.750037C0.642936 0.750037 0.420376 0.842224 0.256282 1.00632C0.0921874 1.17041 0 1.39297 0 1.62504C0 1.8571 0.0921874 2.07966 0.256282 2.24376C0.420376 2.40785 0.642936 2.50004 0.875 2.50004H2.8175L5.1135 11.6875C5.30862 12.4663 6.006 13 6.80838 13H16.8446C17.6347 13 18.3059 12.475 18.5133 11.7138L20.7812 3.37504H6.125L6.5625 5.12504H18.5115L16.8438 11.25H6.8075L4.51237 2.06254C4.41757 1.68561 4.19902 1.35141 3.89172 1.11344C3.58442 0.875468 3.20616 0.747504 2.8175 0.750037H0.875ZM15.75 13C14.3106 13 13.125 14.1857 13.125 15.625C13.125 17.0644 14.3106 18.25 15.75 18.25C17.1894 18.25 18.375 17.0644 18.375 15.625C18.375 14.1857 17.1894 13 15.75 13ZM7.875 13C6.43563 13 5.25 14.1857 5.25 15.625C5.25 17.0644 6.43563 18.25 7.875 18.25C9.31437 18.25 10.5 17.0644 10.5 15.625C10.5 14.1857 9.31437 13 7.875 13ZM7.875 14.75C8.3685 14.75 8.75 15.1315 8.75 15.625C8.75 16.1185 8.3685 16.5 7.875 16.5C7.3815 16.5 7 16.1185 7 15.625C7 15.1315 7.3815 14.75 7.875 14.75ZM15.75 14.75C16.2435 14.75 16.625 15.1315 16.625 15.625C16.625 16.1185 16.2435 16.5 15.75 16.5C15.2565 16.5 14.875 16.1185 14.875 15.625C14.875 15.1315 15.2565 14.75 15.75 14.75Z"
-                fill="white" />
-            </svg>
-
-            <p class="btn-text">Add to Cart</p>
-          </button>
-
+          <p class="price-before">
+            <span class="sr-only">Original price: </span>
+            <s>$169.99</s>
+          </p>
         </div>
+
+        <button class="button" data-icon="shopping-cart">
+          <!-- <svg width="21" height="19">
+            <path
+              d="M0.875 0.750037C0.642936 0.750037 0.420376 0.842224 0.256282 1.00632C0.0921874 1.17041 0 1.39297 0 1.62504C0 1.8571 0.0921874 2.07966 0.256282 2.24376C0.420376 2.40785 0.642936 2.50004 0.875 2.50004H2.8175L5.1135 11.6875C5.30862 12.4663 6.006 13 6.80838 13H16.8446C17.6347 13 18.3059 12.475 18.5133 11.7138L20.7812 3.37504H6.125L6.5625 5.12504H18.5115L16.8438 11.25H6.8075L4.51237 2.06254C4.41757 1.68561 4.19902 1.35141 3.89172 1.11344C3.58442 0.875468 3.20616 0.747504 2.8175 0.750037H0.875ZM15.75 13C14.3106 13 13.125 14.1857 13.125 15.625C13.125 17.0644 14.3106 18.25 15.75 18.25C17.1894 18.25 18.375 17.0644 18.375 15.625C18.375 14.1857 17.1894 13 15.75 13ZM7.875 13C6.43563 13 5.25 14.1857 5.25 15.625C5.25 17.0644 6.43563 18.25 7.875 18.25C9.31437 18.25 10.5 17.0644 10.5 15.625C10.5 14.1857 9.31437 13 7.875 13ZM7.875 14.75C8.3685 14.75 8.75 15.1315 8.75 15.625C8.75 16.1185 8.3685 16.5 7.875 16.5C7.3815 16.5 7 16.1185 7 15.625C7 15.1315 7.3815 14.75 7.875 14.75ZM15.75 14.75C16.2435 14.75 16.625 15.1315 16.625 15.625C16.625 16.1185 16.2435 16.5 15.75 16.5C15.2565 16.5 14.875 16.1185 14.875 15.625C14.875 15.1315 15.2565 14.75 15.75 14.75Z"
+              fill="white" />
+          </svg> -->
+          Add to Cart</button>
+
       </div>
-    </div>
 
-  </div>
-
+    </article>
+  </main>
 </body>
 
 </html>
