@@ -126,5 +126,14 @@ h1 {
 hr {
   border: none;
   border-top: .3px solid var(--primary-blue-200);
+}
 
+.avatar {
+  width: 3.3em;
+  border: 1px solid var(--secondary-white);
+  border-radius: 50%;
+}
+
+.blue span {
+  color: var(--secondary-white);
 }
